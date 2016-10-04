@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Corporations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Companyname</th>
+      <th>Category</th>
+      <th>Profile</th>
+      <th>Revenue</th>
+      <th>Avgincome</th>
+      <th>Link</th>
+      <th>Esdate</th>
+      <th>Lastupdatedate</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @corporations.each do |corporation| %>
+      <tr>
+        <td><%= corporation.companyName %></td>
+        <td><%= corporation.category %></td>
+        <td><%= corporation.profile %></td>
+        <td><%= corporation.revenue %></td>
+        <td><%= corporation.avgIncome %></td>
+        <td><%= corporation.link %></td>
+        <td><%= corporation.esDate %></td>
+        <td><%= corporation.lastUpdateDate %></td>
+        <td><%= link_to 'Show', corporation %></td>
+        <td><%= link_to 'Edit', edit_corporation_path(corporation) %></td>
+        <td><%= link_to 'Destroy', corporation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Corporation', new_corporation_path %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  companyName: MyString
+  category: one
+  profile: MyText
+  revenue: 1
+  avgIncome: 1
+  link: one
+  esDate: 2016-10-04
+  lastUpdateDate: 2016-10-04
+
+two:
+  companyName: MyString
+  category: two
+  profile: MyText
+  revenue: 1
+  avgIncome: 1
+  link: two
+  esDate: 2016-10-04
+  lastUpdateDate: 2016-10-04

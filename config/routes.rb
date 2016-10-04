@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :corporations
+  resources :categories
+  resources :links
   resources :microposts
   resources :users
   root  'users#index'

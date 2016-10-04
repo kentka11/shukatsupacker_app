@@ -10,10 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160925060552) do
+ActiveRecord::Schema.define(version: 20161004140156) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "corporations", force: :cascade do |t|
+    t.string   "companyName"
+    t.integer  "categoryId"
+    t.text     "profile"
+    t.integer  "revenue"
+    t.integer  "avgIncome"
+    t.integer  "hpId"
+    t.integer  "minshuId"
+    t.integer  "financeId"
+    t.date     "esDate"
+    t.date     "lastUpdateDate"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
 
   create_table "microposts", force: :cascade do |t|
     t.text     "content"

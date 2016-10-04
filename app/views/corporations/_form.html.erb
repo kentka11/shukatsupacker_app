@@ -1,0 +1,57 @@
+<%= form_for(corporation) do |f| %>
+  <% if corporation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(corporation.errors.count, "error") %> prohibited this corporation from being saved:</h2>
+
+      <ul>
+      <% corporation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :companyName %>
+    <%= f.text_field :companyName %>
+  </div>
+
+  <div class="field">
+    <%= f.label :category_id %>
+    <%= f.text_field :category_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :profile %>
+    <%= f.text_area :profile %>
+  </div>
+
+  <div class="field">
+    <%= f.label :revenue %>
+    <%= f.number_field :revenue %>
+  </div>
+
+  <div class="field">
+    <%= f.label :avgIncome %>
+    <%= f.number_field :avgIncome %>
+  </div>
+
+  <div class="field">
+    <%= f.label :link_id %>
+    <%= f.text_field :link_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :esDate %>
+    <%= f.date_select :esDate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lastUpdateDate %>
+    <%= f.date_select :lastUpdateDate %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
