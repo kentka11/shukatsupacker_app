@@ -17,7 +17,7 @@ class CorporationsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create corporation" do
     assert_difference('Corporation.count') do
-      post corporations_url, params: { corporation: { avgIncome: @corporation.avgIncome, category_id: @corporation.category_id, companyName: @corporation.companyName, esDate: @corporation.esDate, lastUpdateDate: @corporation.lastUpdateDate, link_id: @corporation.link_id, profile: @corporation.profile, revenue: @corporation.revenue } }
+      post corporations_url, params: { corporation: { average_income: @corporation.average_income, category_id: @corporation.category_id, es_due_date: @corporation.es_due_date, name: @corporation.name, profile: @corporation.profile, revenue: @corporation.revenue } }
     end
 
     assert_redirected_to corporation_url(Corporation.last)
@@ -34,7 +34,7 @@ class CorporationsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update corporation" do
-    patch corporation_url(@corporation), params: { corporation: { avgIncome: @corporation.avgIncome, category_id: @corporation.category_id, companyName: @corporation.companyName, esDate: @corporation.esDate, lastUpdateDate: @corporation.lastUpdateDate, link_id: @corporation.link_id, profile: @corporation.profile, revenue: @corporation.revenue } }
+    patch corporation_url(@corporation), params: { corporation: { average_income: @corporation.average_income, category_id: @corporation.category_id, es_due_date: @corporation.es_due_date, name: @corporation.name, profile: @corporation.profile, revenue: @corporation.revenue } }
     assert_redirected_to corporation_url(@corporation)
   end
 

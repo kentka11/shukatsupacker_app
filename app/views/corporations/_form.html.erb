@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :companyName %>
-    <%= f.text_field :companyName %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
   </div>
 
   <div class="field">
@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= f.label :profile %>
-    <%= f.text_area :profile %>
+    <%= f.text_field :profile %>
   </div>
 
   <div class="field">
@@ -32,23 +32,13 @@
   </div>
 
   <div class="field">
-    <%= f.label :avgIncome %>
-    <%= f.number_field :avgIncome %>
+    <%= f.label :average_income %>
+    <%= f.number_field :average_income %>
   </div>
 
   <div class="field">
-    <%= f.label :link_id %>
-    <%= f.text_field :link_id %>
-  </div>
-
-  <div class="field">
-    <%= f.label :esDate %>
-    <%= f.date_select :esDate %>
-  </div>
-
-  <div class="field">
-    <%= f.label :lastUpdateDate %>
-    <%= f.date_select :lastUpdateDate %>
+    <%= f.label :es_due_date %>
+    <%= f.date_select :es_due_date %>
   </div>
 
   <div class="actions">

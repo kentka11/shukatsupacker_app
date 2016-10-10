@@ -17,7 +17,7 @@ class LinksControllerTest < ActionDispatch::IntegrationTest
 
   test "should create link" do
     assert_difference('Link.count') do
-      post links_url, params: { link: { url: @link.url } }
+      post links_url, params: { link: { link: @link.link } }
     end
 
     assert_redirected_to link_url(Link.last)
@@ -34,7 +34,7 @@ class LinksControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update link" do
-    patch link_url(@link), params: { link: { url: @link.url } }
+    patch link_url(@link), params: { link: { link: @link.link } }
     assert_redirected_to link_url(@link)
   end
 

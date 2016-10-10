@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="reset.css"　type="text/css">
+    <link rel="stylesheet" href="index.css"　type="text/css">
+  </head>
+
+  <body>
+    <header>
+    </header>
+    <h1>会社一覧</h1>
+ <div class="search_list">
+   <table>
+     <theader>
+       <tr>
+         <th>名前</th><th>カテゴリ</th>
+       </tr>
+     </theader>
+     <tbody>
+       <% @corporations.each do |c| %>
+         <tr>
+           <td>
+             <%= c.name %>
+           </td>
+           <td>
+             <%= c.category_id %>
+           </td>
+         </tr>
+       <% end %>
+     </tbody>
+   </table>
+</div>
+    <section id="main">
+      <div id="search_list">
+        <h2>検索結果</h2>
+        <li>オンコリスバイオファーマ</li>
+        <li>バーチャレクスコンサルティング</li>
+        <li>平山</li>
+        <li>富士ソフトSB</li>
+        <li>ジャパンディスプレイ</li>
+      </div>
+    </section>
+    <footer>
+
+    </footer>
+
+  </body>
+
+</html>

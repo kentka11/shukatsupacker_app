@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Companyname:</strong>
-  <%= @corporation.companyName %>
+  <strong>Name:</strong>
+  <%= @corporation.name %>
 </p>
 
 <p>
@@ -21,23 +21,13 @@
 </p>
 
 <p>
-  <strong>Avgincome:</strong>
-  <%= @corporation.avgIncome %>
+  <strong>Average income:</strong>
+  <%= @corporation.average_income %>
 </p>
 
 <p>
-  <strong>Link:</strong>
-  <%= @corporation.link %>
-</p>
-
-<p>
-  <strong>Esdate:</strong>
-  <%= @corporation.esDate %>
-</p>
-
-<p>
-  <strong>Lastupdatedate:</strong>
-  <%= @corporation.lastUpdateDate %>
+  <strong>Es due date:</strong>
+  <%= @corporation.es_due_date %>
 </p>
 
 <%= link_to 'Edit', edit_corporation_path(@corporation) %> |

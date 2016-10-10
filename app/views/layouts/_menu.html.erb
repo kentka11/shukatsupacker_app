@@ -1,0 +1,16 @@
+<section id="menu">
+  <div>
+      <%= form_tag(corporations_path, method: "get") do %>
+          <%= text_field_tag :search, params[:search] %>
+          <%= submit_tag "検索", :name => nil %>
+      <% end %>
+  </div>
+    <div id="navi">
+        <li class="navi-col1">ESスケジュール</li>
+        <li class="navi-col1">ランキング</li>
+        <li class="navi-col1">コラム</li>
+        <li class="navi-col2">業界分析</li>
+        <li class="navi-col2">日記</li>
+        <li class="navi-col2">作る！</li>
+    </div>
+</section>

@@ -1,21 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  companyName: MyString
+  name: MyString
   category: one
-  profile: MyText
+  profile: 
   revenue: 1
-  avgIncome: 1
-  link: one
-  esDate: 2016-10-04
-  lastUpdateDate: 2016-10-04
+  average_income: 1
+  es_due_date: 2016-10-08
 
 two:
-  companyName: MyString
+  name: MyString
   category: two
-  profile: MyText
+  profile: 
   revenue: 1
-  avgIncome: 1
-  link: two
-  esDate: 2016-10-04
-  lastUpdateDate: 2016-10-04
+  average_income: 1
+  es_due_date: 2016-10-08

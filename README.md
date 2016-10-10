@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#rails
+#railsセットアップ系
+■C9でRuby on Railsのアプリケーションを起動するには
+・起動する → コマンドが入力できない状態になる
+$ rails server -b 0.0.0.0 -p 8080
+※ WEBrickというRubyで作られたwebサーバーが内部的に起動
+ 
+・停止する → コマンドが入力できる状態になる
+Ctrl + C
 
-Things you may want to cover:
 
-* Ruby version
+C9のrailsコマンド参考
+<<https://blog.codecamp.jp/rails_cloud9>>
 
-* System dependencies
 
-* Configuration
 
-* Database creation
+#css設置場所
+パス：app/assets/stylesheets
 
-* Database initialization
+cssを読み込むには
+ビューファイルに下記を記述
+<%= stylesheet_link_tag "custom", :media => "all" %>
+スタイルシートがtest.cssというファイル名の場合、
+testとだけ指定すれば良い。ファイル名の.cssは省く。
 
-* How to run the test suite
+production環境では、CSSの更新を反映させるためにプリコンパイルをする。
+これを忘れると、CSSファイルを更新したのに、新しいCSSが反映されないという問題が起こる.
+"rake assets:precompile"
+"rake assets:precompile:all"
 
-* Services (job queues, cache servers, search engines, etc.)
+プリコンパイルについては下記のサイト参考
+<<http://qiita.com/ryounagaoka/items/8cbe76f2fb7a3157f07c>>
 
-* Deployment instructions
-
-* ...
