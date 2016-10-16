@@ -1,43 +1,7 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @corporation.name %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @corporation.category %>
-</p>
-
-<p>
-  <strong>Profile:</strong>
-  <%= @corporation.profile %>
-</p>
-
-<p>
-  <strong>Revenue:</strong>
-  <%= @corporation.revenue %>
-</p>
-
-<p>
-  <strong>Average income:</strong>
-  <%= @corporation.average_income %>
-</p>
-
-<p>
-  <strong>Es due date:</strong>
-  <%= @corporation.es_due_date %>
-</p>
-
-<%= link_to 'Edit', edit_corporation_path(@corporation) %> |
-<%= link_to 'Back', corporations_path %>
-
-<!DOCTYPE html>
 <html>
   <head>
-    <%= stylesheet_link_tag "reset", :media => "all" %>
-    <%= stylesheet_link_tag "index", :media => "all" %>
+    <link rel="stylesheet" href="reset.css"　type="text/css">
+    <link rel="stylesheet" href="index.css"　type="text/css">
   </head>
 
   <body>

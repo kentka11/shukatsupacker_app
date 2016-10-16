@@ -19,12 +19,14 @@
        <% @corporations.each do |c| %>
          <tr>
            <td>
+             <%= link_to(corporation class: 'list-group') do %>
              <%= c.name %>
            </td>
            <td>
              <%= c.category_id %>
            </td>
          </tr>
+             <% end %>
        <% end %>
      </tbody>
    </table>

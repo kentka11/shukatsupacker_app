@@ -1,10 +1,14 @@
 class CorporationsController < ApplicationController
   before_action :set_corporation, only: [:show, :edit, :update, :destroy]
-
+  PER = 10
   # GET /corporations
   # GET /corporations.json
   def index
-    @corporations = Corporation.search(params[:search])
+    @q = corporation.ransack(search[:q])
+    @corporations = @q.result(distinct: true)
+    
+    #@corporations = Corporation.search(params[:search]).
+    
   end
 
   # GET /corporations/1
@@ -71,5 +75,9 @@ class CorporationsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def corporation_params
       params.require(:corporation).permit(:name, :category_id, :profile, :revenue, :average_income, :es_due_date)
+    end
+    
+    def search_params
+      params.require(:q).permit!
     end
 end

@@ -1,7 +1,8 @@
 class HomePageController < ApplicationController
   def home
   end
-
-  def search
+  def details
+  end
+  def search_list
   end
 end
