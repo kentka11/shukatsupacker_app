@@ -129,7 +129,7 @@ input[type="submit"]{
 li.navi-col1 {
     width: 33.33333%;
     width: -webkit-calc(100% / 3);
-    width: calc(98% / 3);
+    width: calc(100% / 3);
     font-size: 1.1em;
     float: left;
     text-align: center;

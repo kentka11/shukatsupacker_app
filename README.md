@@ -129,3 +129,5 @@ rails s -b $IP -p $PORT
  
  
  
+ 
+in your heroku project directory
