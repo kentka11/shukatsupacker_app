@@ -5,4 +5,6 @@ class HomePageController < ApplicationController
   end
   def search_list
   end
+  def comments
+  end
 end

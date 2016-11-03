@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="index.css"　type="text/css">
+    <meta name="viewport" content="width=device-width,user-scalable=yes,maximum-scale=2" />
   </head>
 
   <body>
-    <%= render 'layouts/header' %>
-    <br><br><br><br><br><br><br><br><br><br><br>
-    <%= render 'layouts/menu' %>
-   
+    <div class="wrap">
+    <%= render 'layouts/header/header' %>
+    <section id="top-menu">
+      <div>
+        <%= form_tag 'home_page/search_list', :method => 'get' do %> <%#　projects_pathはモデル名で読みかえること %>
+      <p>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil %>
+      </p>
+        <% end %>
+      </div>
+      <div id="navi">
+        <li class="navi-col1">ESスケジュール</li>
+        <li class="navi-col1">ランキング</li>
+        <li class="navi-col1">コラム</li>
+        <li class="navi-col2">業界分析</li>
+        <li class="navi-col2">就活偏差値</li>
+        <li class="navi-col2">ツール</li>
+      </div>
+    </section>
     <section id="main">
       <div id="hist">
         <h2>最近見た企業</h2>
@@ -35,6 +51,6 @@
 
       </div>
     </section>
-    <%= render 'layouts/footer' %>
+    </div>
   </body>
 </html>

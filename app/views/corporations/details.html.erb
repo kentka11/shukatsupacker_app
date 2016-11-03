@@ -19,7 +19,7 @@
 
     <section id="main">
       <div id="title">
-        <h1>オンコリスバイオファーマ</h1>
+        <h1><%= @corporation.name %></h1>
         <div id="star">★★★★★（4.5）</div>
         <div id="es">次のES締切日は<span>７月１０日</span>です。</div>
       </div>
@@ -34,7 +34,7 @@
           </section>
           <section class="detail-row">
             <div class="t-left-culumn"><span class="title">概要</span></div>
-            <div class="p-right-culumn"><span class="str">希少ガンエイズなど重症感染症の治療薬、検査薬などの開発</span></div>
+            <div class="p-right-culumn"><span class="str"><%= @corporation.profile %></span></div>
           </section>
           <section class="detail-row">
             <div class="t-left-culumn"><span class="title">特徴</span></div>
@@ -46,7 +46,7 @@
           </section>
           <section class="detail-row">
             <div class="t-left-culumn"><span class="title">年収</span></div>
-            <div class="p-right-culumn"><span class="str">662万円</span></div>
+            <div class="p-right-culumn"><span class="str"><%= @corporation.average_income %></span></div>
           </section>
           <section class="detail-row">
             <div class="t-left-culumn"><span class="title">本社</span></div>
@@ -67,6 +67,7 @@
         </section>
       </section>
     </section>
+    
     <footer>
 
     </footer>

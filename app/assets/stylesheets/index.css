@@ -1,3 +1,4 @@
+
 /*===============================================
 画面の横幅が769px以上（パソコン用）
 ===============================================*/
@@ -295,147 +296,7 @@ margin-top: 20px;
   border: 1px solid #666;
 }
 
-#start-date{
-    min-height: 75px;
-    display: table;
-    width: 100%;
-}
 
-#t-start-date{
-      display: table-cell;
-    vertical-align: middle;
-    width: 25%;
-    border: 1px solid #666;
-
-  }
-
-#p-start-date{
-  display: table-cell;
-  vertical-align: middle;
-  width: 75%;
-  border: 1px solid #666;
-}
-
-#profile{
-    min-height: 75px;
-    display: table;
-    width: 100%;
-}
-
-#t-profile{
-    display: table-cell;
-    vertical-align: middle;
-    width: 25%;
-    border: 1px solid #666;
-  }
-
-#p-profile{
-  display: table-cell;
-  vertical-align: middle;
-  width: 75%;
-  border: 1px solid #666;
-}
-
-
-#industry{
-    min-height: 75px;
-    display: table;
-    width: 100%;
-}
-
-#t-industry{
-    display: table-cell;
-    vertical-align: middle;
-    width: 25%;
-    border: 1px solid #666;
-  }
-
-#p-industry{
-  display: table-cell;
-  vertical-align: middle;
-  width: 75%;
-  border: 1px solid #666;
-}
-
-#salary{
-    min-height: 75px;
-    display: table;
-    width: 100%;
-}
-
-#t-salary{
-    display: table-cell;
-    vertical-align: middle;
-    width: 25%;
-    border: 1px solid #666;
-  }
-
-#p-salary{
-  display: table-cell;
-  vertical-align: middle;
-  width: 75%;
-  border: 1px solid #666;
-}
-
-#address{
-    min-height: 75px;
-    display: table;
-    width: 100%;
-}
-
-#t-address{
-    display: table-cell;
-    vertical-align: middle;
-    width: 25%;
-    border: 1px solid #666;
-  }
-
-#p-address{
-  display: table-cell;
-  vertical-align: middle;
-  width: 75%;
-  border: 1px solid #666;
-}
-
-#home-page{
-    min-height: 75px;
-    display: table;
-    width: 100%;
-}
-
-#t-home-page{
-    display: table-cell;
-    vertical-align: middle;
-    width: 25%;
-    border: 1px solid #666;
-  }
-
-#p-home-page{
-  display: table-cell;
-  vertical-align: middle;
-  width: 75%;
-  border: 1px solid #666;
-}
-
-#minshu{
-    min-height: 75px;
-    display: table;
-    width: 100%;
-}
-
-#t-minshu{
-    display: table-cell;
-    vertical-align: middle;
-    width: 25%;
-    border: 1px solid #666;
-  }
-
-#p-minshu{
-  display: table-cell;
-  vertical-align: middle;
-  width: 75%;
-  border: 1px solid #666;
-}
 
 /*detailsページはここまで*/
 
@@ -466,7 +327,6 @@ margin-top: 20px;
     padding-top: 50px;
     padding-left: 42px;
 }
-  
   
 }
 
