@@ -11,18 +11,18 @@
     <%= render 'layouts/header/header' %>
     <section id="top-menu">
       <div id="search">
-        <%= form_tag corporations_path, :method => 'get' do %>
+        <%= form_tag 'home_page/search_list', :method => 'get' do %> <%#　projects_pathはモデル名で読みかえること %>
         <%= text_field_tag :search, params[:search] %>
         <%= submit_tag "検索", :name => nil %>
         <% end %>
       </div>
       <div id="navi">
-        <li class="navi-col1"><%= link_to "ESスケ", esschedule_path %></li>
-        <li class="navi-col1"><%= link_to "ランキング", rank_path %></li>
-        <li class="navi-col1"><%= link_to "コラム", column_path %></li>
-        <li class="navi-col2"><%= link_to "業界分析", industry_path %></li>
+        <li class="navi-col1">ESスケ</li>
+        <li class="navi-col1">ランキング</li>
+        <li class="navi-col1">コラム</li>
+        <li class="navi-col2">業界分析</li>
         <li class="navi-col2">就活偏差値</li>
-        <li class="navi-col2"><%= link_to "ツール", tools_path %></li>
+        <li class="navi-col2">ツール</li>
       </div>
     </section>
     <section id="main">

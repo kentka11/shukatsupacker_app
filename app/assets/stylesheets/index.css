@@ -2,6 +2,42 @@
 画面の横幅が769px以上（パソコン用）
 ===============================================*/
 @media screen and (min-width: 769px){
+/*メニュ部分css*/
+li.navi-col1{
+  width: 16.6666666%;
+  /*width: -webkit-calc(100% / 3);*/
+  /*width: calc(100% / 3);*/
+  font-size: 1.1em;
+  float: left;
+  text-align: center;
+  height: 40px;
+  display: block;
+  padding-top:7px;
+  background-color: #bacde2;
+  border: white;
+  border-style: dotted;
+}
+li.navi-col2{
+  width: 16.6666666%;
+  /*width: -webkit-calc(100% / 3);*/
+  /*width: calc(100% / 3);*/
+  font-size: 1.1em;
+  float: left;
+  text-align: center;
+  height: 40px;
+  display: block;
+  padding-top:7px;
+  background-color: #bacde2;
+  border: white;
+  border-style: dotted;
+}
+
+body{
+  background-color: #ffffff;
+}
+
+.
+
 }
 
 /*===============================================

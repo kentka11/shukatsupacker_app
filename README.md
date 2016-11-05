@@ -114,10 +114,11 @@ rails s -b $IP -p $PORT
  git add -A
  git commit -m "Finish toy app"
  git push
+ rake db:migrate
  
  --deploy
  git push heroku
- 
+ heroku rake db:migrate
  
  git push conoha(#ConoHaへの登録機能) 
  https://www.conoha.jp/wp-content/uploads/2014/09/05_Git.pdf
@@ -129,5 +130,3 @@ rails s -b $IP -p $PORT
  
  
  
- 
-in your heroku project directory

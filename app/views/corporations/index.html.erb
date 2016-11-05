@@ -1,35 +1,51 @@
-<p id="notice"><%= notice %></p>
+<html>
+  <head>
+    <link rel="stylesheet" href="reset.css"　type="text/css">
+    <link rel="stylesheet" href="index.css"　type="text/css">
+  </head>
 
-<h1>Corporations</h1>
+  <body>
+    <header>
+    </header>
+    <h1>会社一覧</h1>
+ <div class="search_list">
+   <table>
+     <theader>
+       <tr>
+         <th>名前</th><th>業界</th>
+       </tr>
+     </theader>
+     <tbody>
+       <% @corporations.each do |c| %>
+         <tr>
+           <td>
+             <%= link_to(corporation class: 'list-group') do %>
+             <%= c.name %>
+           </td>
+           <td>
+             <%= c.category_id %>
+           </td>
+         </tr>
+             <% end %>
+       <% end %>
+     </tbody>
+   </table>
+</div>
+    <section id="main">
+      <div id="search_list">
+        <h2>検索結果</h2>
+        <li>オンコリスバイオファーマ</li>
+        <li>バーチャレクスコンサルティング</li>
+        <li>平山</li>
+        <li>富士ソフトSB</li>
+        <li>ジャパンディスプレイ</li>
+      </div>
+    </section>
+    <footer>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Category</th>
-      <th>Profile</th>
-      <th>Revenue</th>
-      <th>Average income</th>
-      <th>Es due date</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    </footer>
 
-  <tbody>
-    <% @corporations.each do |corporation| %>
-      <tr>
-        <td><%= corporation.name %></td>
-        <td><%= corporation.category %></td>
-        <td><%= corporation.profile %></td>
-        <td><%= corporation.revenue %></td>
-        <td><%= corporation.average_income %></td>
-        <td><%= corporation.es_due_date %></td>
-        <td><%= link_to 'Show', corporation %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  </body>
 
-<br>
+</html>
 
-<%= link_to 'New Corporation', new_corporation_path %>
