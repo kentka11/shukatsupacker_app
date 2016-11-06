@@ -5,6 +5,8 @@
 @import "bootstrap";
 /* forms */
 
+div.user{
+
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
@@ -28,4 +30,6 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
 }

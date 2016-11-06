@@ -74,53 +74,6 @@ header {
 }
 
 
-.menu-trigger,
-.menu-trigger span {
-	display: inline-block;
-	transition: all .4s;
-	box-sizing: border-box;
-}
-
-.menu-trigger{
-    position: relative;
-    width: 45px;
-    height: 33px;
-    float: right;
-    margin-right: 10px;
-    margin-top: 9px;
-}
-
-.menu-trigger span {
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 4px;
-	background-color: #686666;
-	border-radius: 4px;
-}
-.menu-trigger span:nth-of-type(1) {
-	top: 0;
-}
-.menu-trigger span:nth-of-type(2) {
-  top: 12.5px;
-}
-.menu-trigger span:nth-of-type(3) {
-	bottom: 0;
-}
-
-.menu-trigger.active span:nth-of-type(1) {
-	-webkit-transform: translateY(20px) rotate(-45deg);
-	transform: translateY(20px) rotate(-45deg);
-}
-.menu-trigger.active span:nth-of-type(2) {
-	opacity: 0;
-}
-.menu-trigger.active span:nth-of-type(3) {
-	-webkit-transform: translateY(-20px) rotate(45deg);
-	transform: translateY(-20px) rotate(45deg);
-}
-
-
 /*ヘッダーここまで*/
 
 
@@ -135,24 +88,25 @@ li {
   height: 140px;
 }
 
-#search{
-  height: 51px;
+#search{    
+  height: 40px;
   margin-top: 7PX;
+  margin-bottom: 7px;
 }
 
 input[type="text"]{
   width: 80%;
-  height: 100px;
+  height: 100%;
   float: left;
   background-color: #fafafa;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-align: left;
   margin-left: 1%;
 }
 
 input[type="submit"]{
-  height: 100px;
   width: 15%;
+  height: 40px;
   margin-left: 2%;
   margin-top:7px;
   float: left;
